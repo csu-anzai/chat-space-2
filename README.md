@@ -38,18 +38,7 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|integer|null: false, foreign_key: true|
-|password|integer|null: false, foreign_key: true|
-|email|integer|null: false, foreign_key: true|
-
-
-### Association
-belongs_to :groups
-belongs_to :groups_users
-
-|password|string|null: false, foreign_key: true|
-|email|string|null: false, foreign_key: true|
-
+|name|string|null: false, foreign_key: true|
 
 ### Association
 - has_many :messages
@@ -60,34 +49,24 @@ belongs_to :groups_users
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false, foreign_key: true|
+|name|integer|null: false|
 
 
 ### Association
-belongs_to :users
+has_many :users
 belongs_to :groups_users
-
-
-### Association
-- belongs_to :users
-- belongs_to :groups_users
 
 
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|integer|null: false, foreign_key: true|
-|image|integer|null: false, foreign_key: true|
+
+|text|text|null: false|
+|image|string|null: false|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
-
-|text|text|null: false, foreign_key: true|
-|image|text|null: false, foreign_key: true|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
-
-## Association
+### Association
 - belongs_to :groups
 - belongs_to :users
 
