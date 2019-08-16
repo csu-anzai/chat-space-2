@@ -68,7 +68,7 @@ has_many :messages
 |group_id|integer|null: false, foreign_key: true|
 
 
-## Association
+### Association
 - belongs_to :group
 - belongs_to :user
 
