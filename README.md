@@ -40,21 +40,31 @@ Things you may want to cover:
 |------|----|-------|
 |name|string|null: false, foreign_key: true|
 
+
 ### Association
 - has_many :messages
-- belongs_to :groups
-- belongs_to :groups_users
+- belongs_to :group
+- belongs_to :groups_user
 
 
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
+
 |name|integer|null: false|
+
+|name|string|null: false|
+
 
 
 ### Association
 has_many :users
+
 belongs_to :groups_users
+
+belongs_to :groups_user
+
+
 
 
 ## messagesテーブル
@@ -66,7 +76,14 @@ belongs_to :groups_users
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 
+
 ### Association
 - belongs_to :groups
 - belongs_to :users
+
+
+## Association
+- belongs_to :group
+- belongs_to :user
+
 
