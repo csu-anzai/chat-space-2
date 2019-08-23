@@ -1,0 +1,53 @@
+$white: #ffffff;
+
+.side-bar {
+  color: $white;
+  float: left;
+  height: 100px;
+  width: 300px; 
+  
+
+}
+
+.side-header {
+  background-color: #253141;
+  display: flex;
+  align-items: center;
+  height: 96px;
+  padding: 0 0 0 15px;
+  
+
+  &__user {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  &__box {
+    height: 100%;
+    padding: 0 120px 0 0;
+  }
+}
+
+
+
+.group {
+  background-color:  #2f3e51; 
+  padding: 0 20px;
+  height: calc(100vh - 95px);
+
+  &__name {
+    font-size:15px;
+    color: $white;
+    font-weight: bold;
+    padding: 20px 0 5px 0;
+  }
+  
+  &__text {
+    font-size: 11px;
+    color: $white;
+    font-weight: bold;
+    padding-bottom: 40px;
+  }
+}
+
+
+

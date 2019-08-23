@@ -1,24 +1,51 @@
-<!DOCTYPE html>
-%html
- %head
-  %meta{charset: "utf-8"}
+.wrapper
+  .side-bar
+    -#  header
+    .side-header
+      .side-header__user
+        sample name
+    
+      -#  headerの名前囲んでるとこ
+      .side-header__box
+      -# メニューアイコン
+      .side_icon
+        %i.fa.fa-edit
+        %i.fa.fa-cog
 
-%body 
-.wrapper 
-  .side-bar -#サイドバー全体
-    .side-header -#header
-      .side-header_box -#headerの名前囲んでるとこ
-      .side-user_name -#user-nameの表示
-      .side-icon -#メニューアイコン
+    -#  サイドバーの下（グループ名のとこ)
+    .group
+      .group__contents
+        .group__name sample
+        .group__text text
+      .group__contents
+        .group__name hoge
+        .group__text hoge
+      -# %a("url")
 
-    .groups -#サイドバーの下（グループ名のとこ)
-      %a("url")
 
- -#BEMの書き方
-  .main-contents -#メインコンテンツ全体
-    .main-header -#header
-    .main-message -#message
-    .main-form -#form
+  .main-contents
+    .header-main
+      .header-main__groupname group-name
+      .header-main__member member
+      %a{hred: '#', class: 'edit-btn'} edit
+
+    .main-message 
+      %span.main-message__user user-name
+      %span.main-message__day 2019/08/21(Wed) 15:50:00
+      .main-message-text sample
+    
+  
+    .form
+      .form__box
+        %label.form__type
+        %input.message-send{:type => "text",:placeholder => "type a message"}
+        %label.upload-label{for: "upload-icon"}
+          %i.fa.fa-picture-o
+          -# = f.file_field :image, id: "upload-icon"
+          %input.message-btn1{type: 'file',name:"image",id: "upload-icon"}
+      %input.form__message-btn2{type: 'submit',value: "send"}
+        
+
 
 
 
