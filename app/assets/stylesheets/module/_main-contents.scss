@@ -15,8 +15,6 @@ $lightgray: #999999;
   position: relative;
   padding-bottom: 90px;
   box-sizing: border-box;
-
-  
 }
 
 .main-contents {
@@ -79,7 +77,6 @@ $lightgray: #999999;
   }  
 }
     
-  
 
 .edit-btn {
   height: 40px;
@@ -98,18 +95,11 @@ $lightgray: #999999;
 }
 
 
-
-
-
 .form {
   height: 90px;
   background-color: #dddddd;
   padding: 20px  10px;
   display: flex;
-  
-  
-  
-  
 
   &__box {
     display: flex;
@@ -124,7 +114,6 @@ $lightgray: #999999;
    
     padding: 0 30px;
     margin-left: 15px;
-    
     }
   
 
@@ -135,8 +124,6 @@ $lightgray: #999999;
   width: 100%;
   padding: 0 780px 0 20px;
   }
-
-
 
 .fa.fa-picture-o {
  position: absolute;
