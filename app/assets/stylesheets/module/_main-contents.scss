@@ -106,8 +106,7 @@ $lightgray: #999999;
   background-color: #dddddd;
   padding: 20px  10px;
   display: flex;
-  // position: absolute;
-  // bottom: 0;
+  
   
   
   
@@ -122,8 +121,7 @@ $lightgray: #999999;
     height: 50px;
     width: 100px;
     color: $white;
-   // position: absolute;
-    //@include position;
+   
     padding: 0 30px;
     margin-left: 15px;
     
@@ -136,16 +134,11 @@ $lightgray: #999999;
   height: 50px;
   width: 100%;
   padding: 0 780px 0 20px;
-  // padding: 0 600px 0  200px;
-
- // top: 30px;
- // left: 60px;
   }
 
 
 
 .fa.fa-picture-o {
- // @include position;
  position: absolute;
  right: 50px;  
  top: 15px;
@@ -161,7 +154,6 @@ $lightgray: #999999;
   height: 50px;
   width: 100px;
   color: $white;
-  //@include position;
   padding: 0 30px;
   margin-left: 15px;
   }

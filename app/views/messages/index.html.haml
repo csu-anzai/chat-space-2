@@ -1,18 +1,18 @@
 .wrapper
   .side-bar
-    -#  header
+    
     .side-header
       .side-header__user
         sample name
     
-      -#  headerの名前囲んでるとこ
+      
       .side-header__box
-      -# メニューアイコン
+      
       .side_icon
         %i.fa.fa-edit
         %i.fa.fa-cog
 
-    -#  サイドバーの下（グループ名のとこ)
+    
     .group
       .group__contents
         .group__name sample
@@ -20,7 +20,7 @@
       .group__contents
         .group__name hoge
         .group__text hoge
-      -# %a("url")
+      
 
 
   .main-contents
@@ -41,7 +41,7 @@
         %input.message-send{:type => "text",:placeholder => "type a message"}
         %label.upload-label{for: "upload-icon"}
           %i.fa.fa-picture-o
-          -# = f.file_field :image, id: "upload-icon"
+          
           %input.message-btn1{type: 'file',name:"image",id: "upload-icon"}
       %input.form__message-btn2{type: 'submit',value: "send"}
         
