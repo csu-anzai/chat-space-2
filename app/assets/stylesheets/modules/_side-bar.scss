@@ -1,4 +1,4 @@
-$white: #ffffff;
+
 
 .side-bar {
   color: $white;
@@ -7,12 +7,13 @@ $white: #ffffff;
   width: 300px; 
 }
 
-.side-header {
+.header {
   background-color: #253141;
   display: flex;
   align-items: center;
   height: 96px;
   padding: 0 0 0 15px;
+  position: relative;
   
   &__user {
     font-size: 16px;
@@ -22,7 +23,23 @@ $white: #ffffff;
     height: 100%;
     padding: 0 120px 0 0;
   }
+
+  
+
+  &__lists {
+    position: absolute;
+    right: 50px;
+    display: flex;
+
+  }
 }
+
+.icon {
+  color: $white;
+  margin-right: 10px;
+
+}
+
 
 .group {
   background-color:  #2f3e51; 
@@ -41,6 +58,10 @@ $white: #ffffff;
     color: $white;
     font-weight: bold;
     padding-bottom: 40px;
+  }
+
+  &__message {
+    color: $white;
   }
 }
 
