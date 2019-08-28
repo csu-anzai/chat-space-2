@@ -32,19 +32,28 @@
     display: flex;
 
   }
+
+  &__name {
+    font-size: 16px;
+    font-weight: bold;
+    color: $white;
+  }
 }
 
 .icon {
   color: $white;
   margin-right: 10px;
-
 }
 
 
-.group {
+.groups {
   background-color:  #2f3e51; 
   padding: 0 20px;
   height: calc(100vh - 95px);
+  
+}
+
+.group {
 
   &__name {
     font-size:15px;
@@ -62,6 +71,7 @@
 
   &__message {
     color: $white;
+    
   }
 }
 
