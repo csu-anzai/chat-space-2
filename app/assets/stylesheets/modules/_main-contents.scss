@@ -1,9 +1,3 @@
-$white: #ffffff;
-$black: #333333;
-$darkblack:#434A54;
-$skyblue: #38aef0;
-$lightgray: #999999;
-
 @mixin relative {
   position: relative;
 }
@@ -97,53 +91,89 @@ $lightgray: #999999;
 
 .form {
   height: 90px;
-  background-color: #dddddd;
-  padding: 20px  10px;
-  display: flex;
+  background-color: #ddd;
+  padding: 20px  40px;
+  // display: flex;
 
   &__box {
     display: flex;
     @include relative;
-    
+
+  &__image {
+      padding: 0 50px ;
+      }
+  
   }
-  &__message-btn2 {
+  // &__message-btn2 {
+  //   background-color: $skyblue;
+  //   height: 50px;
+  //   width: 100px;
+  //   color: $white;
+   
+  //   padding: 0 30px;
+  //   margin-left: 15px;
+  //   }
+    
+  
+
+  &__submit {
     background-color: $skyblue;
     height: 50px;
     width: 100px;
     color: $white;
-   
     padding: 0 30px;
     margin-left: 15px;
-    }
-  
+    cursor: pointer;
+    
+  }
 
-  .message-send {
+  &__message {
   font-size: 16px;
   color: $darkblack;
   height: 50px;
   width: 100%;
-  padding: 0 780px 0 20px;
+  padding: 0 40px 0 10px;
   }
 
-.fa.fa-picture-o {
+  // .form__box {
+  // &__image {
+  // padding: 0 50px ;
+  // }
+  // }
+
+
+
+// .message-send {
+//   font-size: 16px;
+//   color: $darkblack;
+//   height: 50px;
+//   width: 100%;
+//   padding: 0 780px 0 20px;
+//   }
+
+.icon {
  position: absolute;
- right: 40px;  
- top: 15px;
+ right: 20px;  
+ top: 15px; 
+ left: 50px;
  font-size: 1.25em;
+ color: black;
+ cursor: pointer;
 }
 
-.message-btn1 {
+.hidden {
   display: none;
   }
 
-.message-btn2 {
-  background-color: $skyblue;
-  height: 50px;
-  width: 100px;
-  color: $white;
-  padding: 0 30px;
-  margin-left: 15px;
-  }
+// .message-btn2 {
+//   background-color: $skyblue;
+//   height: 50px;
+//   width: 100px;
+//   color: $white;
+//   padding: 0 30px;
+//   margin-left: 15px;
+//   }
 }
+
 
   
