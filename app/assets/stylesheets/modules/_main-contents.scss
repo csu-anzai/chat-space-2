@@ -38,12 +38,36 @@
   }
 }
 
-.main-message {
+.message {
   
   background-color: #fafafa;
   height: calc(100vh - 190px);
   padding: 46px 40px;
-  
+
+
+  // &__user {
+  //   font-size: 16px;
+  //   font-weight: bold;
+  //   color: $darkblack;
+  // }
+
+  // &__day {
+  //   font-size: 12px;
+  //   color:$lightgray;
+  // }
+
+  // &__text {
+  // font-size: 14px;
+  // color: $darkblack;
+  // padding: 10px 0 0 40px;
+
+  // }
+
+.main-message {
+  left: 10px;
+  font-size: 14px;
+  color: #434A54;
+  } 
 
   &__user {
     font-size: 16px;
@@ -55,20 +79,6 @@
     font-size: 12px;
     color:$lightgray;
   }
-
-  &__text {
-  font-size: 14px;
-  color: $darkblack;
-  padding: 10px 0 0 40px;
-
-  }
-
-.main-message-text {
-  left: 10px;
-  font-size: 14px;
-  color: #434A54;
-    
-  }  
 }
     
 
