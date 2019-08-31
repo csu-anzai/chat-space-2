@@ -1,10 +1,10 @@
 .message
   .upper-message
-    .upper-message__user-name
+    .main-message__user
       = message.user.name
-    .upper-message__date
+    .main-message__day
       = message.created_at.strftime("%Y/%m/%d %H:%M")
-  .lower-message
+  .main-message
     - if message.content.present?
       %p.lower-message__content
         = message.content
