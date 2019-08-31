@@ -46,20 +46,15 @@
       %span.main-message__user user-name
       %span.main-message__day 2019/08/21(Wed) 15:50:00
       .main-message-text sample
-    
-  
+
     .form
-      .form__box
-        %label.form__type
-        %input.message-send{:type => "text",:placeholder => "type a message"}
-        %label.upload-label{for: "upload-icon"}
-          %i.fa.fa-picture-o
-          
-          %input.message-btn1{type: 'file',name:"image",id: "upload-icon"}
-      %input.form__message-btn2{type: 'submit',value: "send"}
-        
+      = form_for [@group, @message] do |f|
+        = f.text_field :content, class: 'form__message', placeholder: 'type a message' 
+        .form__box
+          = f.label :image, class: 'form__box__image' do
+            = fa_icon 'picture-o', class: 'icon'
+            = f.file_field :image, class: 'hidden' 
+        = f.submit 'Send', class: 'form__submit' 
 
-    
-
-
-
+    .messages
+      = render @messages
