@@ -46,7 +46,8 @@
     -#   %span.main-message__user user-name
     -#   %span.main-message__day 2019/08/21(Wed) 15:50:00
     -#   .main-message-text sample
-
+    .messages
+      = render @messages
     .form
       = form_for [@group, @message] do |f|
         = f.text_field :content, class: 'form__message', placeholder: 'type a message' 
@@ -55,6 +56,4 @@
             = fa_icon 'picture-o', class: 'icon'
             = f.file_field :image, class: 'hidden' 
         = f.submit 'Send', class: 'form__submit' 
-
-    .messages
-      = render @messages
+    
